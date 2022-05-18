@@ -171,7 +171,27 @@ section {
 .job {
   height: 400px;
   width: 400px;
-  border: 1px dashed black;
+  h2 {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 5px;
+  }
+  h3 {
+    font-size: 20px;
+    margin: 5px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .job-title {
+    min-height: 120px;
+  }
+  img {
+    height: 70px;
+  }
+}
+.job:hover {
+  border: 2px dashed black;
 }
 .green {
   background-color: green;
