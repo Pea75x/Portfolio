@@ -3,6 +3,7 @@
   box-sizing: border-box;
   font-family: 'Grape Nuts', cursive;
 }
+
 .front-leaf {
   position: fixed;
   right: 0%;
@@ -104,6 +105,7 @@ h2 {
 section {
   width: 80%;
   margin: auto;
+  padding-top: 40px;
 }
 .skills-icons {
   display: flex;
@@ -131,16 +133,25 @@ section {
   margin: 20px 0px;
   height: 270px;
   text-align: center;
-  h3,
-  h4,
-  p {
+  .project-text {
     margin: 0;
+    opacity: 0;
     will-change: opacity;
     transition: opacity 0.5s 0.5s ease-out;
+    a {
+      color: black;
+      font-size: 38px;
+      line-height: 70px;
+    }
+  }
+  h4,
+  h3,
+  a,
+  p {
+    margin: 0;
   }
   h4 {
     font-size: 20px;
-    line-height: 35px;
   }
   h3 {
     font-size: 25px;
@@ -151,16 +162,15 @@ section {
     border-radius: 5px;
     will-change: width;
     transition: width 1s 0.25s;
+    width: 100%;
   }
 }
 .each-project:hover {
-  p,
-  h3,
-  h4 {
-    opacity: 0;
+  .project-text {
+    opacity: 1;
   }
   img {
-    width: 100%;
+    width: 200px;
   }
 }
 
@@ -192,7 +202,4 @@ section {
 }
 .job:hover {
   border: 2px dashed black;
-}
-.green {
-  background-color: green;
 }
