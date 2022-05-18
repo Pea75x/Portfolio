@@ -103,7 +103,6 @@ h2 {
   font-size: 40px;
 }
 section {
-  width: 80%;
   margin: auto;
   padding-top: 40px;
 }
@@ -121,11 +120,24 @@ section {
     }
   }
 }
+#projects {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-bottom: 380px;
+
+  h2 {
+    padding-top: 190px;
+    color: white;
+  }
+}
 .project {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  border: 1px dashed black;
+  background-size: contain;
+  width: 100%;
+  color: white;
 }
 .each-project {
   border-radius: 10px;
@@ -139,7 +151,7 @@ section {
     will-change: opacity;
     transition: opacity 0.5s 0.5s ease-out;
     a {
-      color: black;
+      color: white;
       font-size: 38px;
       line-height: 70px;
     }
