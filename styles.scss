@@ -7,8 +7,8 @@
 .front-leaf {
   position: fixed;
   right: 0%;
-  top: 0;
-  width: 70%;
+  top: 10px;
+  width: 65%;
   // animation: firstLeafEnter linear infinite;
   // animation-play-state: paused;
   // animation-delay: calc(var(--scroll) * -1s);
@@ -23,7 +23,7 @@
   position: fixed;
   left: 0;
   top: 0px;
-  width: 60%;
+  width: 50%;
   will-change: transform;
   transition: transform 1.2s 0.25s cubic-bezier(0.39, 0.53, 0.59, 0.69);
 }
@@ -94,7 +94,7 @@
   padding-top: 50px;
 }
 #about {
-  margin-top: 650px;
+  margin-top: 700px;
   width: 900px;
   p {
     font-size: 25px;
@@ -105,9 +105,10 @@ h2 {
 }
 section {
   margin: auto;
-  padding-top: 40px;
 }
+
 #skills {
+  padding-top: 40px;
   width: 700px;
 }
 .skills-icons {
@@ -125,10 +126,11 @@ section {
   }
 }
 #projects {
+  padding-top: 40px;
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  padding-bottom: 380px;
+  padding-bottom: 320px;
 
   h2 {
     padding-top: 190px;
@@ -144,9 +146,9 @@ section {
   color: white;
 }
 .each-project {
-  border-radius: 10px;
+  border-radius: 20px;
   width: 550px;
-  margin: 20px 0px;
+  margin: 40px 0px;
   height: 270px;
   text-align: center;
   .project-text {
@@ -220,4 +222,9 @@ section {
 }
 .job:hover {
   border: 4px dashed #265a16;
+}
+#experience {
+  h2 {
+    margin-top: 0;
+  }
 }
