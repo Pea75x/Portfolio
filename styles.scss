@@ -19,11 +19,11 @@
   transition: transform 1s 0.25s cubic-bezier(0.39, 0.53, 0.59, 0.69);
 }
 .leaf-2 {
-  transform: translateX(-40%) translateY(-60%) rotate(-40deg);
+  transform: translateX(-80%) translateY(-60%) rotate(-40deg);
   position: fixed;
   left: 0;
   top: 0px;
-  width: 90%;
+  width: 60%;
   will-change: transform;
   transition: transform 1.2s 0.25s cubic-bezier(0.39, 0.53, 0.59, 0.69);
 }
@@ -63,6 +63,7 @@
     li:hover {
       transform: scale(1.2);
     }
+
     a {
       text-decoration: none;
       color: white;
@@ -94,7 +95,7 @@
 }
 #about {
   margin-top: 650px;
-  padding: 50px 120px;
+  width: 900px;
   p {
     font-size: 25px;
   }
@@ -106,17 +107,20 @@ section {
   margin: auto;
   padding-top: 40px;
 }
+#skills {
+  width: 700px;
+}
 .skills-icons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 20px 200px;
+  padding: 20px;
   div {
     width: 100px;
     height: 100px;
     text-align: center;
     i {
-      font-size: 40px;
+      font-size: 55px;
     }
   }
 }
@@ -189,10 +193,12 @@ section {
 .jobs {
   display: flex;
   justify-content: space-around;
+  padding-bottom: 200px;
 }
 .job {
   height: 400px;
   width: 400px;
+  border-radius: 20px;
   h2 {
     font-size: 25px;
     line-height: 25px;
@@ -213,5 +219,5 @@ section {
   }
 }
 .job:hover {
-  border: 2px dashed black;
+  border: 4px dashed #265a16;
 }
