@@ -195,7 +195,6 @@ section {
 .jobs {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 200px;
 }
 .job {
   height: 400px;
@@ -227,4 +226,21 @@ section {
   h2 {
     margin-top: 0;
   }
+}
+.interest {
+  width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  p {
+    width: 600px;
+    font-size: 20px;
+  }
+  i {
+    font-size: 70px;
+  }
+}
+#interests {
+  padding-bottom: 100px;
 }
