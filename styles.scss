@@ -5,45 +5,16 @@
 }
 
 .front-leaf {
-  position: fixed;
+  position: absolute;
   right: 0%;
   top: 10px;
   width: 65%;
-  // animation: firstLeafEnter linear infinite;
-  // animation-play-state: paused;
-  // animation-delay: calc(var(--scroll) * -1s);
-  // animation-iteration-count: 1;
-  // animation-fill-mode: both;
-  transform: translateX(50%) translateY(-20%) rotate(30deg);
-  will-change: transform;
-  transition: transform 1s 0.25s cubic-bezier(0.39, 0.53, 0.59, 0.69);
 }
 .leaf-2 {
-  transform: translateX(-80%) translateY(-60%) rotate(-40deg);
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0px;
   width: 50%;
-  will-change: transform;
-  transition: transform 1.2s 0.25s cubic-bezier(0.39, 0.53, 0.59, 0.69);
-}
-
-// @keyframes firstLeafEnter {
-//   50% {
-//     transform: translateX(40%) translateY(-20%) rotate(30deg);
-//   }
-// }
-// @keyframes secondLeafEnter {
-//   50% {
-//     transform: translateX(-20%) translateY(-50%) rotate(-30deg);
-//   }
-// }
-
-.leaf-2.is-visible {
-  transform: translateX(0%) translateY(0) rotate(0deg);
-}
-.front-leaf.is-visible {
-  transform: translateX(0%) translateY(0) rotate(0deg);
 }
 
 .nav-bar {

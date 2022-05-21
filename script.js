@@ -1,57 +1,31 @@
-// window.addEventListener(
-//   'scroll',
-//   () => {
-//     document.body.style.setProperty(
-//       '--scroll',
-//       window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
-//     );
-//   },
-//   false
-// );
+window.addEventListener('scroll', function () {
+  const target = document.querySelectorAll('.scroll');
+  // const scrolled = window.pageYOffset;
+  // const rate = scrolled * 0.5;
+  // target.style.transform = `translate3d(0, ${rate}px, 0)`;
 
-//example from guy
-// const section = document.querySelectorAll('section');
+  let index = 0,
+    length = target.length;
+  for (index; index < length; index++) {
+    if (window.pageYOffset < 481.5) {
+      let posX = window.pageYOffset * target[index].dataset.ratex;
+      let posY = window.pageYOffset * target[index].dataset.ratey;
+      let rotate = window.pageYOffset * target[index].dataset.rotate;
 
-// function logPosition() {
-//   if (window.scrollY > 490) {
-//     document.documentElement.style.setProperty('--scroll', window.scrollY);
-//   }
-// }
-// window.addEventListener('scroll', logPosition);
-
-const scroll =
-  window.requestAnimationFrame ||
-  function (callback) {
-    window.setTimeout(callback, 1000 / 60);
-  };
-
-const elementsToShow = document.querySelectorAll('.show-on-scroll');
-
-function loop() {
-  elementsToShow.forEach(function (element) {
-    if (window.scrollY > 10) {
-      element.classList.remove('is-visible');
+      console.log(window.pageYOffset);
+      console.log(`x = ${posX}, y = ${posY}, rotate=${rotate}`);
+      target[
+        index
+      ].style.transform = `translate3d(${posX}px, ${posY}px, 0) rotate(${rotate}deg)`;
     } else {
-      element.classList.add('is-visible');
-    }
-  });
-  scroll(loop);
-}
-loop();
+      let posX = 481.5 * target[index].dataset.ratex;
+      let posY =
+        481.5 * target[index].dataset.ratey + window.pageYOffset - 481.5;
+      let rotate = 481.5 * target[index].dataset.rotate;
 
-// function isElementInViewport(el) {
-//   if (typeof jQuery === 'function' && el instanceof jQuery) {
-//     el = el[0];
-//   }
-//   const rect = el.getBoundingClientRect();
-//   return (
-//     (rect.top <= 0 && rect.bottom >= 0) ||
-//     (rect.bottom >=
-//       (window.innerHeight || document.documentElement.clientHeight) &&
-//       rect.top <=
-//         (window.innerHeight || document.documentElement.clientHeight)) ||
-//     (rect.top >= 0 &&
-//       rect.bottom <=
-//         (window.innerHeight || document.documentElement.clientHeight))
-//   );
-// }
+      target[
+        index
+      ].style.transform = `translate3d(${posX}px, ${posY}px, 0) rotate(${rotate}deg)`;
+    }
+  }
+});
