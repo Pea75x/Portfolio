@@ -3,12 +3,17 @@
   box-sizing: border-box;
   font-family: 'Grape Nuts', cursive;
 }
+html {
+  overflow-x: hidden;
+  margin: 0;
+}
 
 .front-leaf {
+  transform: rotate(-27deg);
   position: absolute;
-  right: 0%;
-  top: 10px;
-  width: 65%;
+  right: -15%;
+  top: -50px;
+  width: 66%;
 }
 .leaf-2 {
   position: absolute;
