@@ -6,6 +6,59 @@
 html {
   overflow-x: hidden;
   margin: 0;
+  scroll-behavior: smooth;
+  padding: 0;
+}
+body {
+  margin: 0;
+  // background-color: #0b240c;
+}
+
+.sky {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -5;
+  left: 0;
+}
+.daysky {
+  background: rgb(51, 178, 237);
+  background: linear-gradient(
+    137deg,
+    rgba(51, 178, 237, 1) 0%,
+    rgba(197, 255, 247, 1) 100%
+  );
+}
+.sunsetsky {
+  background: rgb(246, 201, 71);
+  background: linear-gradient(
+    0deg,
+    rgba(246, 201, 71, 1) 44%,
+    rgba(236, 60, 102, 1) 74%,
+    rgba(152, 53, 154, 1) 100%
+  );
+}
+.background-images {
+  z-index: -6;
+}
+.content {
+  z-index: 100;
+}
+
+.cloud1 {
+  width: 40%;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  z-index: -4;
+}
+.cloud2 {
+  width: 30%;
+  position: absolute;
+  top: 200px;
+  left: 600px;
+  z-index: -3;
 }
 
 .front-leaf {
@@ -22,12 +75,34 @@ html {
   width: 50%;
 }
 
+.sea {
+  position: absolute;
+  width: 100%;
+  top: 400px;
+  left: 0;
+  height: 400px;
+  z-index: -2;
+}
+.sunsetsea {
+  filter: hue-rotate(-20deg);
+}
+
+.sun {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  width: 400px;
+  height: auto;
+  z-index: -1;
+}
+
 .nav-bar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #265a16;
+  z-index: 100;
 
   ul {
     display: flex;
@@ -70,7 +145,8 @@ html {
   padding-top: 50px;
 }
 #about {
-  margin-top: 700px;
+  padding-top: 40px;
+  margin-top: 660px;
   width: 900px;
   p {
     font-size: 25px;
@@ -85,7 +161,7 @@ section {
 
 #skills {
   padding-top: 40px;
-  width: 700px;
+  width: 800px;
 }
 .skills-icons {
   display: flex;
@@ -94,10 +170,10 @@ section {
   padding: 20px;
   div {
     width: 100px;
-    height: 100px;
+    height: 140px;
     text-align: center;
     i {
-      font-size: 55px;
+      font-size: 70px;
     }
   }
 }
@@ -177,6 +253,7 @@ section {
   justify-content: space-around;
 }
 .job {
+  z-index: 10;
   height: 400px;
   width: 400px;
   border-radius: 20px;
@@ -199,11 +276,9 @@ section {
     height: 70px;
   }
 }
-.job:hover {
-  border: 4px dashed #265a16;
-}
 #experience {
   h2 {
+    padding-top: 40px;
     margin-top: 0;
   }
 }
@@ -222,16 +297,17 @@ section {
   }
 }
 #interests {
-  padding-bottom: 100px;
+  padding-top: 40px;
+  // padding-bottom: 100px;
 }
 .headings {
   font-size: 70px;
 }
-
-.wave {
+.end {
+  min-height: 300px;
   width: 100%;
-  z-index: -1;
-  position: fixed;
-  left: 0;
-  top: 0;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
 }
