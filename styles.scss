@@ -258,8 +258,6 @@ section {
   }
   img {
     border-radius: 10px;
-    will-change: width;
-    transition: width 1s 0.25s;
     width: 500px;
   }
 }
