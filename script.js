@@ -40,13 +40,13 @@ window.addEventListener('scroll', function () {
   }
 
   //* sky, clouds sea and sun scroll
-  if (window.pageYOffset > 4400) {
+  if (window.pageYOffset > 4500) {
     let index = 0,
       length = scrollItems.length;
     for (index; index < length; index++) {
-      let posX = 4400 * scrollItems[index].dataset.ratex;
-      let posY = 4400 * scrollItems[index].dataset.ratey;
-      let rotate = 4400 * scrollItems[index].dataset.rotate;
+      let posX = 4500 * scrollItems[index].dataset.ratex;
+      let posY = 4500 * scrollItems[index].dataset.ratey;
+      let rotate = 4500 * scrollItems[index].dataset.rotate;
       scrollItems[
         index
       ].style.transform = `translate3d(${posX}px, ${posY}px, 0) rotate(${rotate}deg)`;

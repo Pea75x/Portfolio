@@ -225,6 +225,10 @@ section {
   flex-direction: column;
   color: white;
 }
+.links {
+  display: flex;
+  justify-content: space-around;
+}
 .each-project {
   display: flex;
   justify-content: space-around;
@@ -233,15 +237,23 @@ section {
   margin: 30px 0px;
 
   .project-text {
-    width: 500px;
+    width: 550px;
     padding: 5px;
     a {
       color: white;
-      font-size: 40px;
-      line-height: 70px;
+      font-size: 30px;
+      padding: 10px;
+      text-decoration: none;
+      border: 2px solid white;
+      border-radius: 10px;
     }
-    i:hover {
-      color: #80b76f;
+    .link:hover {
+      background-color: white;
+      color: #0f2c09;
+    }
+    .languages {
+      font-size: 35px;
+      margin-top: 20px;
     }
   }
 
