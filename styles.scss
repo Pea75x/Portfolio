@@ -152,9 +152,11 @@ body {
 }
 .left {
   text-align: left;
+  flex-direction: row;
 }
 .right {
   text-align: right;
+  flex-direction: row-reverse;
 }
 .arrow {
   padding-top: 50px;
@@ -340,9 +342,6 @@ section {
   }
 }
 @media only screen and (max-width: 1150px) {
-  * {
-    color: purple;
-  }
   .front-leaf {
     right: -20%;
     top: -20px;
@@ -356,6 +355,22 @@ section {
   .job {
     p {
       display: none;
+    }
+  }
+  .project {
+    .project-text {
+      width: 100%;
+    }
+    .each-project {
+      flex-direction: column;
+      text-align: center;
+
+      p {
+        font-size: 25px;
+      }
+    }
+    img {
+      width: 400px;
     }
   }
 }
