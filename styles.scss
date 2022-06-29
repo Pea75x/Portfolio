@@ -1,12 +1,12 @@
+//*MAIN
 * {
-  text-align: center;
   box-sizing: border-box;
   font-family: 'Grape Nuts', cursive;
+  scroll-behavior: smooth;
 }
 html {
   overflow-x: hidden;
   margin: 0;
-  scroll-behavior: smooth;
   padding: 0;
   background-color: #0f2c09;
 }
@@ -14,6 +14,7 @@ body {
   margin: 0;
 }
 
+//* SCROLL ANIMATION
 .sky {
   height: 100vh;
   width: 100%;
@@ -95,6 +96,7 @@ body {
   z-index: -1;
 }
 
+//* NAVBAR
 .nav-bar {
   position: fixed;
   top: 0;
@@ -120,6 +122,8 @@ body {
     }
   }
 }
+
+//* CONTENT
 .title {
   font-size: 70px;
   position: absolute;
@@ -139,6 +143,17 @@ body {
   div:hover {
     transform: scale(1.2);
   }
+}
+.headings,
+.title,
+.centered-text {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
 }
 .arrow {
   padding-top: 50px;
@@ -162,6 +177,7 @@ section {
 
 #skills {
   padding-top: 40px;
+  padding-bottom: -10px;
   max-width: 800px;
   width: 90%;
 }
@@ -202,60 +218,48 @@ section {
 .project {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  background-size: contain;
-  width: 100%;
+  align-items: center;
+  flex-direction: column;
   color: white;
 }
 .each-project {
-  border-radius: 20px;
-  width: 550px;
-  margin: 40px 0px;
-  height: 270px;
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 30px 0px;
+
   .project-text {
-    margin: 0;
-    opacity: 0;
-    will-change: opacity;
-    transition: opacity 0.5s 0.5s ease-out;
+    width: 500px;
+    padding: 5px;
     a {
       color: white;
-      font-size: 38px;
+      font-size: 40px;
       line-height: 70px;
     }
     i:hover {
       color: #80b76f;
     }
   }
-  h4,
-  h3,
-  a,
-  p {
+
+  h4 {
+    font-size: 25px;
     margin: 0;
   }
-  h4 {
-    font-size: 20px;
-  }
   h3 {
-    font-size: 25px;
+    font-size: 45px;
     font-weight: 900;
-    line-height: 35px;
+    line-height: 50px;
+    margin: 0;
+  }
+  p {
+    font-size: 20px;
   }
   img {
     border-radius: 10px;
     will-change: width;
     transition: width 1s 0.25s;
-    width: 100%;
-  }
-}
-
-.each-project:hover {
-  .project-text {
-    opacity: 1;
-    display: initial;
-  }
-  img {
-    width: 200px;
+    width: 500px;
   }
 }
 
@@ -288,6 +292,7 @@ section {
 }
 #experience {
   margin-top: -100px;
+  margin-bottom: -20px;
   .headings {
     padding-top: 60px;
     margin-top: 0;
@@ -295,22 +300,21 @@ section {
 }
 .interest {
   width: 80%;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   p {
-    width: 600px;
-    font-size: 20px;
+    max-width: 700px;
+    font-size: 25px;
   }
   i {
-    font-size: 90px;
+    font-size: 100px;
   }
 }
 #interests {
-  padding-top: 40px;
-  // padding-bottom: 100px;
+  padding-top: 30px;
 }
 .headings {
   font-size: 70px;
