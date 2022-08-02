@@ -363,6 +363,30 @@ section {
   transform: scale(1.1);
 }
 
+.paint:hover {
+  transform: scale(1.1);
+  background: -webkit-linear-gradient(
+    rgba(71, 235, 246, 1) 24%,
+    rgba(71, 246, 184, 1) 0%,
+    rgba(246, 201, 71, 1) 49%,
+    rgba(236, 60, 102, 1) 77%,
+    rgba(152, 53, 154, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.earth:hover {
+  transform: scale(1.1);
+  background: -webkit-linear-gradient(
+    rgba(71, 246, 184, 1) 0%,
+    rgba(71, 235, 246, 1) 32%,
+    rgba(37, 135, 7, 1) 69%,
+    rgba(87, 56, 46, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media only screen and (max-width: 1150px) {
   .front-leaf {
     right: -20%;
