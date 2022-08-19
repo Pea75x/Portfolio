@@ -29,7 +29,7 @@ window.addEventListener('scroll', function () {
   }
 
   //*  CHANGE DAY TO NIGHT
-  if (window.pageYOffset > 2000) {
+  if (window.pageYOffset > 2500) {
     sky.classList.remove('daysky');
     sky.classList.add('sunsetsky');
     sea.classList.add('sunsetsea');
@@ -40,7 +40,7 @@ window.addEventListener('scroll', function () {
   }
 
   //* sky, clouds sea and sun scroll
-  if (window.pageYOffset > 4500) {
+  if (window.pageYOffset > 5500) {
     let index = 0,
       length = scrollItems.length;
     for (index; index < length; index++) {
