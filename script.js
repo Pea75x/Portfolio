@@ -4,7 +4,7 @@ window.addEventListener('scroll', function () {
   const scrollItems = document.querySelectorAll('.scroll');
   const sky = document.querySelector('.sky');
   const sea = document.querySelector('.sea');
-  const clientWidth = window.screen.width;
+  // const clientWidth = window.screen.width;
 
   //* Just the leaves
   let leafIndex = 0,
@@ -40,7 +40,7 @@ window.addEventListener('scroll', function () {
   }
 
   //* sky, clouds sea and sun scroll
-  if (window.pageYOffset > 5500) {
+  if (window.pageYOffset > 5800) {
     let index = 0,
       length = scrollItems.length;
     for (index; index < length; index++) {
