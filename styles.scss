@@ -303,8 +303,23 @@ section {
   .job-title {
     min-height: 120px;
   }
-  img {
-    height: 70px;
+  .malogo {
+    height: 50px;
+    padding: 5px auto;
+  }
+  .hologo {
+    height: 80px;
+    margin: -15px auto;
+  }
+  .galogo {
+    height: 40px;
+    padding: 20px auto;
+  }
+}
+.work-tech-specs {
+  i {
+    font-size: 40px;
+    margin: 0 5px;
   }
 }
 #experience {
@@ -403,6 +418,17 @@ section {
     p {
       display: none;
     }
+    .work-tech-specs {
+      margin: 30px;
+    }
+    .hologo {
+      margin: 0;
+    }
+    .galogo,
+    .malogo {
+      margin-top: 30px;
+      height: 30px;
+    }
   }
   .project {
     .project-text {
@@ -442,5 +468,8 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .work-tech-specs {
+    display: none;
   }
 }
