@@ -4,7 +4,8 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: 'Grape Nuts', cursive;
-  overflow-x: hidden:
+  // overflow-x: hidden;
+  // overflow-y: visible;
 }
 html {
   overflow-x: hidden;
@@ -47,6 +48,7 @@ body {
 }
 .background-images {
   z-index: -6;
+  overflow-x: hidden;
 }
 .content {
   z-index: 100;
@@ -109,6 +111,7 @@ body {
 //* PHONE BACKGROUND
 .phone-background {
   display: none;
+  overflow-x: hidden;
 }
 .phone-sky {
   height: 100vh;
@@ -210,14 +213,11 @@ body {
 
 .menu-bg {
   z-index: 1;
-  width: 0;
+  width: 850px;
   height: 100vh;
-  background: rgb(43, 100, 29);
-  background: linear-gradient(
-    90deg,
-    rgba(43, 100, 29, 1) 0%,
-    rgba(43, 100, 29, 0) 100%
-  );
+  left: -850px;
+  background-size: cover;
+  background-repeat: no-repeat;
   transition: 0.3s ease;
   position: fixed;
 }
@@ -243,8 +243,10 @@ body {
 }
 
 .change-bg {
-  width: 400px;
-  height: 110vh;
+  left: -280px;
+  transform: rotate(100deg);
+  // width: 400px;
+  // height: 110vh;
 }
 
 //* CONTENT
@@ -329,10 +331,12 @@ section {
 }
 .project-border {
   width: 100%;
+  overflow-x: hidden;
 }
 .border-bottom {
   transform: rotate(180deg);
   margin: 0;
+  overflow-x: hidden;
 }
 
 #projects {
@@ -411,7 +415,6 @@ section {
   justify-content: space-around;
 }
 .job {
-  z-index: 10;
   height: 400px;
   width: 400px;
   h2 {
@@ -578,7 +581,7 @@ section {
   html {
     background: rgb(51, 178, 237);
     background: linear-gradient(
-      137deg,
+      90deg,
       rgba(51, 178, 237, 1) 0%,
       rgba(197, 255, 247, 1) 100%
     );
@@ -620,13 +623,14 @@ section {
       width: 45%;
     }
   }
-
+  .border-bottom {
+    margin-top: -2px;
+  }
   .jobs {
     flex-direction: column;
     align-items: center;
   }
   .job {
-    // background-color: rgba(255, 192, 203, 0.563);
     background-color: #0f2c09;
     height: 220px;
     color: white;
@@ -661,6 +665,7 @@ section {
     height: 110vh;
   }
   .menu-bg {
-    background: rgb(43, 100, 29);
+    width: 110vh;
+    top: -10%;
   }
 }
