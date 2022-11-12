@@ -19,21 +19,23 @@
       href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
       rel="stylesheet"
     />
     <title>Priya Patel 👩🏽‍💻 Junior Developer</title>
   </head>
   <body>
+    <!-- MOVING IMAGES -->
     <div class="background-images">
       <img
         class="sun scroll"
         data-ratex="-0.1"
         data-ratey="1"
         data-rotate="0.05"
-        src="./images/sun.png"
+        src="./images/sun2.png"
       />
       <img
         class="cloud2 scroll"
@@ -75,10 +77,37 @@
       />
       <div class="sky daysky"></div>
     </div>
+
+    <div class="phone-background">
+      <!-- <div class="phone-sky daysky"></div> -->
+      <img src="./images/front-leaf.png" class="phone-leaf1" />
+      <img src="./images/leaf-2.png" class="phone-leaf2" />
+      <img class="phone-sea" src="./images/wave3.png" />
+    </div>
     <div class="content">
       <!-- nav bar -->
-      <i class="fa-solid fa-bars menu"></i>
-      <nav class="nav-bar">
+      <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li onclick="menuOnClick()"><a href="#about">About me</a></li>
+            <li onclick="menuOnClick()"><a href="#skills">Skills</a></li>
+            <li onclick="menuOnClick()"><a href="#projects">My Projects</a></li>
+            <li onclick="menuOnClick()">
+              <a href="#experience">Experience</a>
+            </li>
+            <li onclick="menuOnClick()"><a href="#interests">Interests</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="menu-bg" id="menu-bg"></div>
+      <!-- <i class="fa-solid fa-bars menu"></i> -->
+      <!-- <nav class="nav-bar">
         <ul>
           <li><a href="#about">About me</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -86,7 +115,7 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#interests">Interests</a></li>
         </ul>
-      </nav>
+      </nav> -->
 
       <!-- title -->
       <header>
@@ -234,13 +263,14 @@
                     class="link"
                     href="https://github.com/Pea75x/E-commerce_website"
                     target="_blank"
-                    ><i class="fa-brands fa-github"></i> GitHub page
+                    ><i class="fa-brands fa-github"></i>
+                    <span>GitHub page</span>
                   </a>
                   <a
                     class="link"
                     href="https://pea75x-ecommerce-app.netlify.app/"
                     target="_blank"
-                    ><i class="fa-solid fa-file"></i> Webpage</a
+                    ><i class="fa-solid fa-file"></i> <span>Webpage</span></a
                   >
                 </div>
               </div>
@@ -269,13 +299,14 @@
                     class="link"
                     href="https://github.com/Pea75x/backpack-project"
                     target="_blank"
-                    ><i class="fa-brands fa-github"></i> GitHub page
+                    ><i class="fa-brands fa-github"></i>
+                    <span>GitHub page</span>
                   </a>
                   <a
                     class="link"
                     href="https://backpack-project-pea75x.netlify.app"
                     target="_blank"
-                    ><i class="fa-solid fa-file"></i> Webpage</a
+                    ><i class="fa-solid fa-file"></i> <span>Webpage</span></a
                   >
                 </div>
               </div>
@@ -300,7 +331,8 @@
                     class="link"
                     href="https://github.com/Pea75x/pygame-project-1"
                     target="_blank"
-                    ><i class="fa-brands fa-github"></i> GitHub page
+                    ><i class="fa-brands fa-github"></i>
+                    <span>GitHub page</span>
                   </a>
                 </div>
               </div>
@@ -328,13 +360,14 @@
                     class="link"
                     href="https://github.com/Pea75x/project-4-frontend/blob/main/README.md"
                     target="_blank"
-                    ><i class="fa-brands fa-github"></i> GitHub page
+                    ><i class="fa-brands fa-github"></i>
+                    <span>GitHub page</span>
                   </a>
                   <a
                     class="link"
                     href="https://pea75x-project4-frontend.netlify.app"
                     target="_blank"
-                    ><i class="fa-solid fa-file"></i> Webpage</a
+                    ><i class="fa-solid fa-file"></i> <span>Webpage</span></a
                   >
                 </div>
               </div>
@@ -363,13 +396,14 @@
                     class="link"
                     href="https://github.com/Pea75x/GA-project-3-frontend"
                     target="_blank"
-                    ><i class="fa-brands fa-github"></i>GitHub page</a
+                    ><i class="fa-brands fa-github"></i>
+                    <span>GitHub page</span></a
                   >
                   <a
                     class="link"
                     href="https://ga-project-3-pea75x.netlify.app/"
                     target="_blank"
-                    ><i class="fa-solid fa-file"></i>Webpage</a
+                    ><i class="fa-solid fa-file"></i> <span>Webpage</span></a
                   >
                 </div>
               </div>
@@ -397,7 +431,8 @@
                     class="link"
                     href="https://github.com/Pea75x/project2"
                     target="_blank"
-                    ><i class="fa-brands fa-github"></i>GitHub page</a
+                    ><i class="fa-brands fa-github"></i>
+                    <span>GitHub page</span></a
                   >
                 </div>
               </div>
@@ -423,13 +458,14 @@
                     class="link"
                     href="https://github.com/Pea75x/GA-project-1/blob/master/README.md"
                     target="_blank"
-                    ><i class="fa-brands fa-github"></i>GitHub page</a
+                    ><i class="fa-brands fa-github"></i>
+                    <span>GitHub page</span></a
                   >
                   <a
                     class="link"
                     href="https://pea75x.github.io/GA-project-1/"
                     target="_blank"
-                    ><i class="fa-solid fa-file"></i>Webpage</a
+                    ><i class="fa-solid fa-file"></i> <span>Webpage</span></a
                   >
                 </div>
               </div>

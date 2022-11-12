@@ -72,3 +72,10 @@ window.addEventListener('scroll', function () {
   //   console.log('new width = ', newWidth);
   // });
 });
+
+//* navbar
+function menuOnClick() {
+  document.getElementById('menu-bar').classList.toggle('change');
+  document.getElementById('nav').classList.toggle('change');
+  document.getElementById('menu-bg').classList.toggle('change-bg');
+}
