@@ -3,9 +3,6 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Grape Nuts', cursive;
-  // overflow-x: hidden;
-  // overflow-y: visible;
 }
 html {
   overflow-x: hidden;
@@ -18,6 +15,16 @@ body {
   margin: 0;
   width: 100vw;
   overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+a {
+  font-family: 'Grape Nuts', cursive;
+}
+h4,
+p {
+  font-family: 'Ubuntu', sans-serif;
 }
 
 //* SCROLL ANIMATION
@@ -264,6 +271,7 @@ body {
   justify-content: center;
   width: 90%;
   margin: auto;
+  font-size: 70px;
   div {
     margin: 0 50px;
   }
@@ -530,6 +538,11 @@ section {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.endContact {
+  a {
+    color: white;
+  }
 }
 
 @media only screen and (max-width: 1150px) {
