@@ -29,29 +29,24 @@ window.addEventListener('scroll', function () {
   }
 
   //*  CHANGE DAY TO NIGHT
-  if (window.pageYOffset > 2500) {
-    sky.classList.remove('daysky');
-    sky.classList.add('sunsetsky');
-    sea.classList.add('sunsetsea');
-  } else {
-    sky.classList.add('daysky');
-    sky.classList.remove('sunsetsky');
-    sea.classList.remove('sunsetsea');
-  }
+  // if (window.pageYOffset > 2500) {
+  //   sky.classList.remove('daysky');
+  //   sky.classList.add('sunsetsky');
+  //   sea.classList.add('sunsetsea');
+  // } else {
+  //   sky.classList.add('daysky');
+  //   sky.classList.remove('sunsetsky');
+  //   sea.classList.remove('sunsetsea');
+  // }
 
   //* sky, clouds sea and sun scroll
-  if (window.pageYOffset > 5800) {
-    let index = 0,
-      length = scrollItems.length;
-    for (index; index < length; index++) {
-      let posX = 4500 * scrollItems[index].dataset.ratex;
-      let posY = 4500 * scrollItems[index].dataset.ratey;
-      let rotate = 4500 * scrollItems[index].dataset.rotate;
-      scrollItems[
-        index
-      ].style.transform = `translate3d(${posX}px, ${posY}px, 0) rotate(${rotate}deg)`;
-    }
-  } else {
+  if (window.pageYOffset > 5900) {
+    sky.style.display = 'none';
+    sea.style.display = 'none';
+  } else if (window.pageYOffset < 2500) {
+    sky.style.display = 'initial';
+    sea.style.display = 'initial';
+
     let index = 0,
       length = scrollItems.length;
     for (index; index < length; index++) {
@@ -59,6 +54,20 @@ window.addEventListener('scroll', function () {
       let posY = window.pageYOffset * scrollItems[index].dataset.ratey;
       let rotate = window.pageYOffset * scrollItems[index].dataset.rotate;
       console.log(window.pageYOffset);
+      scrollItems[
+        index
+      ].style.transform = `translate3d(${posX}px, ${posY}px, 0) rotate(${rotate}deg)`;
+    }
+  } else {
+    sky.style.display = 'initial';
+    sea.style.display = 'initial';
+
+    let index = 0,
+      length = scrollItems.length;
+    for (index; index < length; index++) {
+      let posX = (window.pageYOffset - 4000) * scrollItems[index].dataset.ratex;
+      let posY = window.pageYOffset * scrollItems[index].dataset.ratey;
+      let rotate = window.pageYOffset * scrollItems[index].dataset.rotate;
       scrollItems[
         index
       ].style.transform = `translate3d(${posX}px, ${posY}px, 0) rotate(${rotate}deg)`;
