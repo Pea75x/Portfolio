@@ -40,7 +40,7 @@ window.addEventListener('scroll', function () {
   }
 
   //* sky, clouds sea and sun scroll
-  if (window.pageYOffset > 5900) {
+  if (window.pageYOffset > 5800) {
     let index = 0,
       length = scrollItems.length;
     for (index; index < length; index++) {
