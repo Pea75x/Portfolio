@@ -225,13 +225,15 @@ p {
 
 .menu-bg {
   z-index: 1;
-  width: 850px;
-  height: 100vh;
-  left: -850px;
+  width: 620px;
+  height: 97vh;
+  top: 1%;
+  left: -620px;
   background-size: cover;
   background-repeat: no-repeat;
   transition: 0.3s ease;
   position: fixed;
+  transform: rotate(70deg);
 }
 
 .change {
@@ -255,8 +257,8 @@ p {
 }
 
 .change-bg {
-  left: -280px;
-  transform: rotate(100deg);
+  left: -310px;
+  transform: rotate(135deg);
   // width: 400px;
   // height: 110vh;
 }
