@@ -226,8 +226,8 @@ p {
 .menu-bg {
   z-index: 1;
   width: 620px;
-  height: 97vh;
-  top: 1%;
+  height: 650px;
+  top: 1.5%;
   left: -620px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -680,13 +680,5 @@ section {
   }
   .interest {
     flex-direction: column;
-  }
-  .change-bg {
-    width: 100%;
-    height: 110vh;
-  }
-  .menu-bg {
-    width: 110vh;
-    top: -10%;
   }
 }
