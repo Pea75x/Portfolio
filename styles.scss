@@ -616,6 +616,12 @@ section {
   }
   #about {
     margin-top: 800px;
+    p {
+      background-color: #ffffff8a;
+      // background-color: #0f2c0975;
+      border-radius: 10px;
+      padding: 5px;
+    }
   }
   .contact div {
     margin: auto;
