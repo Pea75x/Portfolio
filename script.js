@@ -1,3 +1,19 @@
+// APLYiD Junior Developer Challenge
+let categories = ['Misc', 'Programming', 'Dark', 'Pun', 'Spooky', 'Christmas'];
+let buttons = [];
+let categoriesContainer = document.getElementById('categories-container');
+
+function createGrid() {
+  for (let i = 0; i < categories; i++) {
+    const button = document.createElement('div');
+    button.setAttribute('data-id', categories[i]);
+    button.setAttribute('data-id', 'category-button');
+    buttons.push(button);
+    categoriesContainer.appendChild(button);
+  }
+}
+createGrid();
+
 //* scroll animation
 window.addEventListener('scroll', function () {
   const leaves = document.querySelectorAll('.leafScroll');
@@ -53,7 +69,6 @@ window.addEventListener('scroll', function () {
       let posX = window.pageYOffset * scrollItems[index].dataset.ratex;
       let posY = window.pageYOffset * scrollItems[index].dataset.ratey;
       let rotate = window.pageYOffset * scrollItems[index].dataset.rotate;
-      console.log(window.pageYOffset);
       scrollItems[
         index
       ].style.transform = `translate3d(${posX}px, ${posY}px, 0) rotate(${rotate}deg)`;
