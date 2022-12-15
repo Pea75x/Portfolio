@@ -89,7 +89,6 @@ function menuOnClick() {
 }
 
 //? APLYiD Junior Developer Challenge
-
 const categories = [
   'Misc',
   'Programming',
@@ -100,12 +99,36 @@ const categories = [
 ];
 let buttons = [];
 const categoriesContainer = document.querySelector('.categories-container');
-
+const jokeText = document.querySelector('.joke-text');
+const jokeSearchInput = document.querySelector('.joke-search-input');
+const jokeSearchSubmit = document.querySelector('.joke-search-submit');
+let jokeCategory = 'Any';
 
 // Load a joke on page load
 const api = 'https://v2.jokeapi.dev/joke/';
 const blacklist = 'blacklistFlags=religious,political,racist,sexist,explicit';
 
+const getJoke = (category, textSearch) => {
+  let textString = '';
+  textSearch && (textString = `&contains=${textSearch}`);
+
+  console.log(`${api}${category}?${blacklist}${textString}`);
+  axios
+    .get(`${api}${category}?${blacklist}${textString}`)
+    .then((response) => {
+      const joke = response.data;
+      console.log(joke);
+      if (joke.error == true) {
+        jokeText.innerHTML = joke.message;
+      } else if (joke.type === 'twopart') {
+        jokeText.innerHTML = `${joke.setup} - ${joke.delivery}`;
+      } else {
+        jokeText.innerHTML = `${joke.joke}`;
+      }
+    })
+    .catch((error) => console.error(error));
+};
+getJoke(jokeCategory, '');
 
 // add the category buttons
 function createCategoryButtons() {
@@ -120,6 +143,19 @@ function createCategoryButtons() {
 }
 createCategoryButtons();
 
+function changeCategory(event) {
+  jokeCategory = event.target.innerText;
+  getJoke(jokeCategory, '');
+}
 
+// Narrow search when button is clicked
+buttons.forEach((button) => button.addEventListener('click', changeCategory));
 
-
+function textSearch(event) {
+  const text = jokeSearchInput.value;
+  getJoke(jokeCategory, text);
+  jokeSearchInput.value = '';
+}
+console.log('category', jokeCategory);
+// Narrow search when using text search
+jokeSearchSubmit.addEventListener('click', textSearch);
