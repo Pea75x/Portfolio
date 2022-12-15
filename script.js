@@ -1,19 +1,3 @@
-// APLYiD Junior Developer Challenge
-let categories = ['Misc', 'Programming', 'Dark', 'Pun', 'Spooky', 'Christmas'];
-let buttons = [];
-let categoriesContainer = document.getElementById('categories-container');
-
-function createGrid() {
-  for (let i = 0; i < categories; i++) {
-    const button = document.createElement('div');
-    button.setAttribute('data-id', categories[i]);
-    button.setAttribute('data-id', 'category-button');
-    buttons.push(button);
-    categoriesContainer.appendChild(button);
-  }
-}
-createGrid();
-
 //* scroll animation
 window.addEventListener('scroll', function () {
   const leaves = document.querySelectorAll('.leafScroll');
@@ -103,3 +87,39 @@ function menuOnClick() {
   document.getElementById('nav').classList.toggle('change');
   document.getElementById('menu-bg').classList.toggle('change-bg');
 }
+
+//? APLYiD Junior Developer Challenge
+
+const categories = [
+  'Misc',
+  'Programming',
+  'Dark',
+  'Pun',
+  'Spooky',
+  'Christmas'
+];
+let buttons = [];
+const categoriesContainer = document.querySelector('.categories-container');
+
+
+// Load a joke on page load
+const api = 'https://v2.jokeapi.dev/joke/';
+const blacklist = 'blacklistFlags=religious,political,racist,sexist,explicit';
+
+
+// add the category buttons
+function createCategoryButtons() {
+  for (let i = 0; i < categories.length; i++) {
+    const button = document.createElement('div');
+    button.setAttribute('class', categories[i]);
+    button.setAttribute('id', 'category-button');
+    buttons.push(button);
+    categoriesContainer.appendChild(button);
+    button.innerHTML = categories[i];
+  }
+}
+createCategoryButtons();
+
+
+
+

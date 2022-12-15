@@ -308,7 +308,7 @@ p {
 }
 #about {
   padding-top: 40px;
-  margin-top: 660px;
+  margin-top: 850px;
   width: 80%;
   max-width: 900px;
   color: #081a05;
@@ -691,8 +691,72 @@ section {
 }
 
 // APLYiD Junior Developer Challenge
+.joke-container {
+  width: 60%;
+  min-height: 250px;
+  background-color: #0f2c09dc;
+  margin: 20px auto 0;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Grape Nuts', cursive;
+  h2 {
+    margin: 0;
+    font-size: 30px;
+  }
+}
+
+.categories-container {
+  display: flex;
+  justify-content: space-around;
+}
+.joke-text {
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 20px;
+}
+
 #category-button {
-  width: 20px;
-  height: 20px;
-  background-color: green;
+  width: 105px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Grape Nuts', cursive;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: transparent;
+}
+#category-button:hover {
+  transform: scale(1.1);
+}
+
+.joke-search-input {
+  border-radius: 5px;
+  border: 2px solid white;
+  background-color: transparent;
+  height: 30px;
+  width: 200px;
+  color: white;
+}
+.joke-search-submit {
+  background-color: white;
+  font-family: 'Grape Nuts', cursive;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: #0f2c09;
+  width: 150px;
+  height: 30px;
+  font-size: 20px;
+}
+.joke-search-submit:hover {
+  background-color: transparent;
+  color: white;
+}
+.joke-search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90px;
+  justify-content: space-around;
+  margin-top: 5px;
 }
