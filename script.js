@@ -112,12 +112,10 @@ const getJoke = (category, textSearch) => {
   let textString = '';
   textSearch && (textString = `&contains=${textSearch}`);
 
-  console.log(`${api}${category}?${blacklist}${textString}`);
   axios
     .get(`${api}${category}?${blacklist}${textString}`)
     .then((response) => {
       const joke = response.data;
-      console.log(joke);
       if (joke.error == true) {
         jokeText.innerHTML = joke.message;
       } else if (joke.type === 'twopart') {
@@ -156,6 +154,5 @@ function textSearch(event) {
   getJoke(jokeCategory, text);
   jokeSearchInput.value = '';
 }
-console.log('category', jokeCategory);
 // Narrow search when using text search
 jokeSearchSubmit.addEventListener('click', textSearch);
