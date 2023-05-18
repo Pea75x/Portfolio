@@ -1,3 +1,7 @@
+const deviceText = document.querySelector('.device-text');
+let detectDevice = navigator.platform;
+deviceText.innerHTML = detectDevice;
+
 //* scroll animation
 window.addEventListener('scroll', function () {
   const leaves = document.querySelectorAll('.leafScroll');
