@@ -1,9 +1,72 @@
-const deviceText = document.querySelector('.device-text');
-let detectDevice = navigator.platform;
-deviceText.innerHTML = detectDevice;
-
 // //* scroll animation
-// window.addEventListener('scroll', function () {
+const codeSection = document.querySelector('.code-section');
+const code = document.querySelectorAll('.code-image');
+const section = document.querySelector('.about-section');
+
+codeSection.addEventListener('scroll', () => {
+  let codeIndex = 0;
+  let codeLength = code.length;
+  for (codeIndex; codeIndex < codeLength; codeIndex++) {
+    let posY = codeSection.scrollTop * code[codeIndex].dataset.ratey;
+    code[codeIndex].style.transform = `translateY(${posY}px)`;
+  }
+});
+
+document.querySelectorAll('.subsection-arrow').forEach((arrow) => {
+  arrow.addEventListener('click', () => {
+    // Find the skills container next to the subsection
+    const skillsContainer =
+      arrow.closest('.skill-subsection').nextElementSibling;
+
+    // Toggle the hidden class
+    if (skillsContainer) {
+      skillsContainer.classList.toggle('hidden');
+    }
+
+    // Optionally rotate the arrow
+    arrow.classList.toggle('rotate-left');
+  });
+});
+
+document.querySelectorAll('.experience-arrow').forEach((arrow) => {
+  arrow.addEventListener('click', () => {
+    // Find the skills container next to the subsection
+    const companyDetails = arrow.closest('.company-header').nextElementSibling;
+
+    // Toggle the hidden class
+    if (companyDetails) {
+      companyDetails.classList.toggle('hidden');
+    }
+
+    // Optionally rotate the arrow
+    arrow.classList.toggle('rotate-right');
+  });
+});
+
+// const content = document.querySelector('.content');
+
+// content.addEventListener('scroll', function () {
+//   console.log('hello');
+//   const code = document.querySelectorAll('.ruby-code');
+
+//   let scrollPosition = code.scrollTop;
+//   console.log(scrollPosition);
+
+//   let codeIndex = 0,
+//     codeLength = code.length;
+//   for (codeIndex; codeIndex < codeLength; codeIndex++) {
+//     let posX = window.pageYOffset * code[codeIndex].dataset.ratex;
+//     let posY = window.pageYOffset * code[codeIndex].dataset.ratey;
+//     let rotate = window.pageYOffset * code[codeIndex].dataset.rotate;
+//     let position = code[codeIndex].dataset.position;
+
+//     code[
+//       codeIndex
+//     ].style.transform = `translate3d(${posX}px, ${posY}px, 0) rotate(${
+//       rotate - position
+//     }deg)`;
+// }
+// });
 //   const leaves = document.querySelectorAll('.leafScroll');
 //   const scrollItems = document.querySelectorAll('.scroll');
 //   const sky = document.querySelector('.sky');
@@ -33,15 +96,15 @@ deviceText.innerHTML = detectDevice;
 //   }
 
 //   //*  CHANGE DAY TO NIGHT
-//   // if (window.pageYOffset > 2500) {
-//   //   sky.classList.remove('daysky');
-//   //   sky.classList.add('sunsetsky');
-//   //   sea.classList.add('sunsetsea');
-//   // } else {
-//   //   sky.classList.add('daysky');
-//   //   sky.classList.remove('sunsetsky');
-//   //   sea.classList.remove('sunsetsea');
-//   // }
+//   if (window.pageYOffset > 2500) {
+//     sky.classList.remove('daysky');
+//     sky.classList.add('sunsetsky');
+//     sea.classList.add('sunsetsea');
+//   } else {
+//     sky.classList.add('daysky');
+//     sky.classList.remove('sunsetsky');
+//     sea.classList.remove('sunsetsea');
+//   }
 
 //   //* sky, clouds sea and sun scroll
 //   if (window.pageYOffset > 5900) {
@@ -78,11 +141,11 @@ deviceText.innerHTML = detectDevice;
 //   }
 
 //   //*CHANGE OF WIDTH
-//   // console.log('width = ', clientWidth);
-//   // window.addEventListener('resize', function (event) {
-//   //   var newWidth = window.innerWidth;
-//   //   console.log('new width = ', newWidth);
-//   // });
+//   console.log('width = ', clientWidth);
+//   window.addEventListener('resize', function (event) {
+//     var newWidth = window.innerWidth;
+//     console.log('new width = ', newWidth);
+//   });
 // });
 
 // //* navbar

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="./css/styles.min.css" /> -->
+    <link rel="stylesheet" href="./css/styles.min.css" />
     <script
       src="https://kit.fontawesome.com/6b91cf4c55.js"
       crossorigin="anonymous"
@@ -25,115 +25,562 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gaegu&family=Indie+Flower&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <title>Priya Patel 👩🏽‍💻 Junior Developer</title>
+    <title>Priya Patel 👩🏽‍💻 Fullstack Developer</title>
   </head>
   <body>
-    <!-- MOVING IMAGES -->
-    <!-- <div class="background-images">
-      <img
-        class="cloud2 scroll"
-        src="./images/cloud2.png"
-        data-ratex="0.1"
-        data-ratey="1"
-        data-rotate="0"
-      />
-      <img
-        class="cloud1 scroll"
-        src="./images/cloud1.png"
-        data-ratex="0.3"
-        data-ratey="1"
-        data-rotate="0"
-      />
-      <img
-        class="sea scroll"
-        src="./images/wave3.png"
-        data-ratex="0"
-        data-ratey="1"
-        data-rotate="0"
-      />
-      <img
-        src="./images/leaf-2.png"
-        class="leaf-2 leafScroll"
-        data-ratex="-1.2"
-        data-ratey="-0.1"
-        data-rotate="-0.1"
-        data-position="0"
-      />
-
-      <img
-        src="./images/front-leaf.png"
-        class="front-leaf leafScroll"
-        data-ratex="1.1"
-        data-ratey="0.5"
-        data-rotate="0.04"
-        data-position="27"
-      />
-      <div class="sky daysky"></div>
-    </div> -->
-
-    <!-- <div class="phone-background">
-      <img src="./images/front-leaf.png" class="phone-leaf1" />
-      <img src="./images/leaf-2.png" class="phone-leaf2" />
-      <img class="phone-sea" src="./images/wave3.png" />
-    </div> -->
-    <div class="device-text"></div>
-    <!-- <div class="content">
-      <div id="menu">
-        <div id="menu-bar" onclick="menuOnClick()">
-          <div id="bar1" class="bar"></div>
-          <div id="bar2" class="bar"></div>
-          <div id="bar3" class="bar"></div>
-        </div>
-        <nav class="nav" id="nav">
-          <ul>
-            <li onclick="menuOnClick()"><a href="#about">About me</a></li>
-            <li onclick="menuOnClick()"><a href="#skills">Skills</a></li>
-            <li onclick="menuOnClick()"><a href="#projects">My Projects</a></li>
-            <li onclick="menuOnClick()">
-              <a href="#experience">Experience</a>
-            </li>
-            <li onclick="menuOnClick()"><a href="#interests">Interests</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div
-        class="menu-bg"
-        id="menu-bg"
-        style="background-image: url('./images/cheese-leaf2.png')"
-      ></div>
-
-      <header>
-        <div id="home" class="title">
-          <h1>Priya Patel</h1>
-          <h2 class="headings">Junior Developer</h2>
-          <div class="contact">
-            <div>
-              <a href="mailto:priya_93_x@hotmail.co.uk"
-                ><i class="fa-solid fa-envelope"></i
-              ></a>
+    <div class="content">
+      <header class="heading">
+        <div class="heading-container">
+          <div class="traffic-light">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="searchbar-container">
+            <div class="arrows">
+              <i class="fa-solid fa-arrow-left"></i>
+              <i class="fa-solid fa-arrow-right"></i>
             </div>
-            <div>
-              <a href="https://github.com/Pea75x" target="_blank"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </div>
-            <div>
-              <a
-                href="https://www.linkedin.com/in/priyapatel-93x/"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
+            <div class="searchbar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <p>Priyas Portfolio</p>
             </div>
           </div>
-
-          <i class="fa-solid fa-angles-down arrow"></i>
+          <div class="fake-layout"></div>
         </div>
       </header>
+      <div class="main-body">
+        <div class="first-vs-panel">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="second-vs-panel">
+          <div class="skills-title">
+            <i class="fa-solid fa-chevron-down"></i>
+            Skills
+          </div>
+          <div class="skills-icons">
+            <div class="skill-subsection">
+              <div>
+                <i class="fa-solid fa-chevron-down subsection-arrow"></i>
+                <i class="fa-solid fa-folder"></i>
+                Languages
+              </div>
+            </div>
+            <div class="skills-container">
+              <div class="skill">
+                <i class="devicon-javascript-plain colored"></i>
+                <p>JavaScript</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-python-plain colored"></i>
+                <p>Python</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-ruby-plain colored"></i>
+                <p>Ruby</p>
+              </div>
+              <div class="skill">
+                <i class="fa-solid fa-database" style="color: #87ceeb"></i>
+                <p>SQL</p>
+              </div>
+            </div>
+            <div class="skill-subsection">
+              <div>
+                <i class="fa-solid fa-chevron-down subsection-arrow"></i>
+                <i class="fa-solid fa-folder"></i>
+                Frameworks/Libraries
+              </div>
+            </div>
+            <div class="skills-container">
+              <div class="skill">
+                <i class="devicon-rails-plain colored"></i>
+                <p>Ruby on Rails</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-vuejs-plain colored"></i>
+                <p>Vue.js</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-react-original colored"></i>
+                <p>React</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-redux-original colored"></i>
+                <p>Redux</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-nodejs-plain colored"></i>
+                <p>Node.js</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-django-plain colored"></i>
+                <p>Django</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-npm-original-wordmark colored"></i>
+                <p>npm</p>
+              </div>
+              <div class="skill">
+                <img
+                  width="13px"
+                  style="
+                    margin: 0 10px;
+                    background-color: white;
+                    border-radius: 50%;
+                  "
+                  src="./images/hotwire-icon.png"
+                />
+                <p>Hotwire</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-css3-plain colored"></i>
+                <p>CSS</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-sass-original colored"></i>
+                <p>SCSS</p>
+              </div>
+            </div>
+            <div class="skill-subsection">
+              <div>
+                <i class="fa-solid fa-chevron-down subsection-arrow"></i>
+                <i class="fa-solid fa-folder"></i>
+                Tools & Technologies
+              </div>
+            </div>
+            <div class="skills-container">
+              <div class="skill">
+                <i class="devicon-github-original"></i>
+                <p>GitHub</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-git-plain colored"></i>
+                <p>Git</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-docker-plain colored"></i>
+                <p>Docker</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-heroku-plain colored"></i>
+                <p>Heroku</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+                <p>AWS</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-postgresql-plain colored"></i>
+                <p>PostgreSQL</p>
+              </div>
+              <div class="skill">
+                <img
+                  width="13px"
+                  style="margin: 0 10px"
+                  src="./images/sidekiq-icon.svg"
+                />
+                <p>Sidekiq</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-redis-plain colored"></i>
+                <p>Redis</p>
+              </div>
+              <div class="skill">
+                <img
+                  width="13px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+                  style="margin: 0 10px"
+                />
+                <p>Postman</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-mongodb-plain colored"></i>
+                <p>MongoDB</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-devicon-plain colored"></i>
+                <p>Capybara</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-rspec-plain colored"></i>
+                <p>Rspec</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-jest-plain colored"></i>
+                <p>Jest</p>
+              </div>
+              <div class="skill">
+                <img
+                  width="13px"
+                  style="margin: 0 10px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                />
+                <p>Tailwind CSS</p>
+              </div>
+              <div class="skill">
+                <img
+                  width="13px"
+                  style="margin: 0 10px"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-plain.svg"
+                />
+                <p>CI - GitHub Actions</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-webpack-plain colored"></i>
+                <p>Webpack</p>
+              </div>
+              <div class="skill">
+                <i class="devicon-firebase-plain colored"></i>
+                <p>Firebase</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="third-vs-panel">
+          <nav class="nav" id="nav">
+            <ul>
+              <li onclick="menuOnClick()">
+                <a href="#about">About me</a
+                ><span><i class="fa-solid fa-x"></i></span>
+              </li>
+              <li onclick="menuOnClick()">
+                <a href="#experience">Experience</a
+                ><span><i class="fa-solid fa-x"></i></span>
+              </li>
+              <li onclick="menuOnClick()">
+                <a href="#projects">Projects</a
+                ><span><i class="fa-solid fa-x"></i></span>
+              </li>
+              <li onclick="menuOnClick()">
+                <a href="#education">Education</a
+                ><span><i class="fa-solid fa-x"></i></span>
+              </li>
+            </ul>
+          </nav>
+          <div class="code-section">
+            <div class="images">
+              <img
+                class="ruby-code code-image"
+                src="./images/ruby-code.png"
+                data-ratey="-1.2"
+              />
+              <img
+                class="react-code code-image"
+                src="./images/react-code.png"
+                data-ratey="-1.8"
+              />
+              <img
+                class="python-code code-image"
+                src="./images/python-code.png"
+                data-ratey="-0.9"
+              />
+            </div>
+            <div class="main-title">
+              <div>
+                <h1>Priya Patel</h1>
+                <h2>Full Stack Developer</h2>
+              </div>
+              <img src="./images/me.jpg" class="headshot" />
+            </div>
+            <div class="sections">
+              <section id="about" class="section-box">
+                <div class="section-title">About me</div>
+                <div class="section-text">
+                  Ruby on Rails developer with experience building and
+                  maintaining web applications, focused on writing clean,
+                  efficient and scalable code. Skilled in full-stack development
+                  with Ruby on Rails, Vue.js, and React, and well-versed in Git
+                  version control best practices. Effective problem-solver with
+                  strong communication skills, taking initiative to solve
+                  complex problems and continuously improve. Seeking an
+                  opportunity to contribute to a close and collaborative team
+                  where I can continue to grow as a developer.
+                </div>
+              </section>
+              <section id="experience" class="section-box">
+                <div class="section-title">Experience</div>
+                <div class="section-text">
+                  <div class="company-header">
+                    <i class="fa-solid fa-chevron-right experience-arrow"></i>
 
-      <section id="about">
+                    <a target="_blank" href="https://www.aplyid.com/"
+                      ><img src="./images/aplyid.png" class="company-image"
+                    /></a>
+                    <div class="company-title">
+                      <div>Junior Developer, APLYiD</div>
+                      <div>Jan 2023 - July 2024</div>
+                      <div>
+                        <i class="devicon-ruby-plain colored"></i>
+                        <i class="devicon-rails-plain colored"></i>
+                        <i class="devicon-vuejs-plain colored"></i>
+                        <i class="devicon-github-original"></i>
+                        <i class="devicon-docker-plain colored"></i>
+                        <i class="devicon-heroku-plain colored"></i>
+
+                        <img
+                          width="13px"
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                        />
+
+                        <i class="devicon-postgresql-plain colored"></i>
+                        <img width="13px" src="./images/sidekiq-icon.svg" />
+                        <i class="devicon-redis-plain colored"></i>
+
+                        <img
+                          width="13px"
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-plain.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="company-details hidden">
+                    <li>
+                      Collaborate with product managers, designers and other
+                      developers to create solutions that address customer needs
+                      and user experience
+                    </li>
+                    <li>
+                      Write maintainable code using Ruby on Rails and Vue.js,
+                      ensuring high-quality standards and adhering to best
+                      practices
+                    </li>
+                    <li>
+                      Integrated third party APIs, ensuring smooth transactions
+                      and reliable functionality
+                    </li>
+                    <li>
+                      Conducted unit and integration testing using testing
+                      frameworks like Vitest, Capybara and RSpec to ensure high
+                      code quality and reliability
+                    </li>
+                    <li>
+                      Completing regular code reviews, enhancing team knowledge
+                      sharing and code quality
+                    </li>
+                    <li>
+                      Participated in Agile ceremonies, including daily
+                      stand-ups, sprint planning, and retrospectives,
+                      contributing to project discussions
+                    </li>
+                    <li>
+                      Managing version control using Git - using Git Feature
+                      Branch Workflow
+                    </li>
+                    <li>
+                      Updated documentation to reflect newly deployed features
+                    </li>
+                    <li>
+                      Identifying and resolving bugs through thorough testing
+                      and debugging
+                    </li>
+                    <li>
+                      Deployed and managed applications on Heroku, ensuring
+                      smooth production performance and monitoring
+                    </li>
+                    <li>
+                      Resolving and updating bug and support tickets from
+                      internal staff members with efficiency
+                    </li>
+                  </ul>
+                </div>
+                <div class="section-text">
+                  <div class="company-header">
+                    <i class="fa-solid fa-chevron-right experience-arrow"></i>
+
+                    <a
+                      target="_blank"
+                      href="https://www.humanitarianoperations.org/"
+                      ><img
+                        src="./images/humanitarian_operations.jpeg"
+                        class="company-image"
+                        style="border-radius: 50%"
+                    /></a>
+                    <div class="company-title">
+                      <div>
+                        Frontend Developer Intern, Humanitarian Operations
+                      </div>
+                      <div>Sep 2022 - Jan 2023</div>
+                      <div>
+                        <i class="devicon-react-original colored"></i>
+                        <i class="devicon-css3-plain colored"></i>
+                        <i class="devicon-github-original"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="company-details hidden">
+                    <li>
+                      Building pages with React in their internal systems as
+                      well as reusable components
+                    </li>
+                    <li>
+                      Updating layout and responsiveness of pages with CSS on
+                      the Hope3G website according to designers specifications
+                    </li>
+                    <li>
+                      Participated in weekly team meetings to provide updates on
+                      progress and assist in problem-solving during development
+                      sprints
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section id="projects" class="section-box">
+                <div class="section-title">Projects</div>
+                <div class="projects-box">
+                  <div class="project-languages">
+                    <div>Filter by skill</div>
+                    <div class="skill-filter">
+                      <i class="devicon-javascript-plain colored"></i>
+                      <div>JavaScript</div>
+                    </div>
+                    <div class="skill-filter">
+                      <i class="devicon-postgresql-plain colored"></i>
+                      <div>PostgreSQL</div>
+                    </div>
+                    <div class="skill-filter">
+                      <i class="devicon-python-plain colored"></i>
+                      <div>Python</div>
+                    </div>
+                    <div class="skill-filter">
+                      <i class="devicon-react-original colored"></i>
+                      <div>React</div>
+                    </div>
+                    <div class="skill-filter">
+                      <i class="devicon-ruby-plain colored"></i>
+                      <div>Ruby</div>
+                    </div>
+                  </div>
+                  <div class="projects">
+                    <div class="project">
+                      <img
+                        src="./images/spanish-project.gif"
+                        class="project-preview"
+                      />
+                      <div>
+                        <h2 class="project-title">
+                          Spanish Learning Project - Backend
+                        </h2>
+                        <div class="preview-button">Preview</div>
+
+                        <div>Skills/Technologies</div>
+                        <div class="project-icons">
+                          <div class="project-icon-container">
+                            <i
+                              class="devicon-ruby-plain colored project-icon"
+                            ></i>
+                            <div>Ruby</div>
+                          </div>
+                          <div class="project-icon-container">
+                            <i
+                              class="devicon-rails-plain colored project-icon"
+                            ></i>
+                            <div>Rails</div>
+                          </div>
+                          <div class="project-icon-container">
+                            <i
+                              class="devicon-postgresql-plain colored project-icon"
+                            ></i>
+                            <div>PostgreSQL</div>
+                          </div>
+                          <div class="project-icon-container">
+                            <img
+                              src="./images/sidekiq-icon.svg"
+                              class="project-icon"
+                            />
+                            <div>Sidekiq</div>
+                          </div>
+                          <div class="project-icon-container">
+                            <i
+                              class="devicon-redis-plain colored project-icon"
+                            ></i>
+                            <div>Redis</div>
+                          </div>
+                          <div class="project-icon-container">
+                            <img
+                              class="project-icon"
+                              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-plain.svg"
+                            />
+                            <div>CI</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="project">
+                      <div
+                        style="background-image: url(./images/bagfactory.gif)"
+                        class="div-project-preview"
+                      ></div>
+
+                      <div>
+                        <h2 class="project-title">Bag Factory</h2>
+                        <div class="preview-button">Preview</div>
+
+                        <div>Skills/Technologies</div>
+                        <div class="project-icons">
+                          <div class="project-icon-container">
+                            <i
+                              class="devicon-react-original colored project-icon"
+                            ></i>
+
+                            <div>React</div>
+                          </div>
+                          <div class="project-icon-container">
+                            <i
+                              class="devicon-python-plain colored project-icon"
+                            ></i>
+
+                            <div>Python</div>
+                          </div>
+                          <div class="project-icon-container">
+                            <i
+                              class="devicon-postgresql-plain colored project-icon"
+                            ></i>
+                            <div>PostgreSQL</div>
+                          </div>
+                          <div class="project-icon-container">
+                            <i
+                              class="devicon-django-plain colored project-icon"
+                            ></i>
+
+                            <div>Django</div>
+                          </div>
+                          <div class="project-icon-container">
+                            <i
+                              class="devicon-sass-original colored project-icon"
+                            ></i>
+
+                            <div>SCSS</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+<!-- <section id="about">
         <h2 class="headings">About me</h2>
         <p class="centered-text">
           I am a Junior Developer with a background in events including
@@ -219,7 +666,6 @@
           </div>
         </div>
       </section>
-
       <section id="projects">
         <img src="./images/projectbackgroundend2.png" class="project-border" />
         <div class="green-background">
@@ -440,7 +886,6 @@
           class="project-border border-bottom"
         />
       </section>
-
       <section id="experience">
         <h2 class="headings">Previous Experience</h2>
         <div class="jobs">
@@ -552,9 +997,5 @@
             ></a>
           </div>
         </div>
-      </section>
-    </div> -->
-
-    <script src="./script.js"></script>
-  </body>
-</html>
+      </section> -->
+<!-- </div> -->
