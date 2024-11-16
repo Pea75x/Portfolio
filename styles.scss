@@ -165,6 +165,7 @@ p {
   width: 100%;
   height: calc(100vh - 55px);
   overflow-y: auto;
+  scroll-behavior: smooth;
   pointer-events: visible;
 }
 
@@ -172,7 +173,7 @@ p {
   width: 700px;
   position: absolute;
   z-index: -1;
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
 .react-code {
@@ -180,9 +181,33 @@ p {
   top: 50%;
 }
 
+.react-code2 {
+  top: 210%;
+  left: 75%;
+}
+.react-code3 {
+  top: 300%;
+  left: 70%;
+}
+
 .python-code {
   left: 30%;
   top: 90%;
+}
+
+.python-code2 {
+  left: 5%;
+  top: 120%;
+}
+
+.ruby-code {
+  top: 140%;
+  left: 0%;
+}
+.ruby-code2 {
+  left: 40%;
+  top: 400%;
+  background-color: pink;
 }
 
 .main-title {
@@ -241,6 +266,9 @@ p {
 }
 .skills-icons {
   margin-left: 10px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: calc(100vh - 55px);
 }
 .skill {
   font-size: 13px;
